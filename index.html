@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>good</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <script src = "/one.js">
+    </script>
+    <div class = "One">
+    <input type = "text" id = "current_date">
+    <input type = "button" id = "click" value = "click" onclick="location.href = '#open'">
+    <div class="white_content" id="open">
+        <div id = 'new_window'>
+            <div id = 'view1'>
+                <p>년 : </p>
+                <p>월 : </p>
+                <p>일 : </p>
+            </div>
+            <div id = 'insert'>
+                <input type = "text" id = 'insert_year'>
+                <br>
+                <input type = "text" id = 'insert_month'>
+                <br>
+                <input type = "text" id = 'insert_day'>
+            </div>
+            <input type="button" id = "allow_button" value = "allow" onclick="FS()">
+            <input type="button" id = "close_button" value = "close" onclick="location.href='#close'">
+        </div>
+    </div>
+    </div>
+    <div id = 'no_mobile'>
+        <span>화면 크기를 조정해주세요.</span>
+    </div>
+</body>
+</html>
