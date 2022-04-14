@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>good</title>
+    <title>D-Day</title>
     <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    <script src = "/D-Day/one.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src = "/one.js"></script>
     <div class = "One">
     <input type = "text" id = "current_date">
-    <input type = "button" id = "click" value = "click" onclick="location.href = '#open'">
+    <input type = "button" id = "click" value="+" onclick="location.href = '#open'">
+    <div class="upbar">
+        <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+    </div>
+    <div class = "selectview">
+        <span></span>
+    </div>
+    
+    
     <div class="white_content" id="open">
         <div id = 'new_window'>
             <div id = 'view1'>
@@ -35,5 +47,7 @@
     <div id = 'no_mobile'>
         <span>화면 크기를 조정해주세요.</span>
     </div>
+    
+    <script src = "/two.js"></script>
 </body>
 </html>

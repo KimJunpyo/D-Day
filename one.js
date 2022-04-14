@@ -6,19 +6,17 @@ let day;
 function ondbclick_event(){
     alert(1);
 }
-function enterKey(e){
-    if(e.KeyCode == 13){
-        alert("asd");
-        document.location.href="#close";
-    }
-        
-}
 
 function FS(){
     year = document.getElementById("insert_year").value;
     month = document.getElementById("insert_month").value;
     day = document.getElementById("insert_day").value;
-    D_Day();
+    if(year === "" || month === "" || day === ""){
+        alert("                              날짜를 다시 입력하세요\n                                    (yyyy-mm-dd)");
+    }
+    else{
+        D_Day();
+    }
 }
 
 function D_Day(){
@@ -28,6 +26,7 @@ function D_Day(){
         document.getElementById("current_date").value = "D-Day";
     }
     else{
-        document.getElementById("current_date").value = theDay;
+        document.getElementById("current_date").value = "D - " + theDay;
     }
 }
+
