@@ -9,19 +9,25 @@
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src = "/one.js"></script>
+    <script src = "./one.js"></script>
     <div class = "One">
-    <input type = "text" id = "current_date">
+    <input type = "text" id = "current_date" disabled>
     <input type = "button" id = "click" value="+" onclick="location.href = '#open'">
-    <div class="upbar">
-        <a class="menu-trigger" href="#">
+        <a class="menu-trigger" href="#selectview">
             <span></span>
             <span></span>
             <span></span>
-          </a>
-    </div>
+        </a>
     <div class = "selectview">
-        <span></span>
+        <a class="menu-trigger2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div><p>계절 테마 변경</p>
+            <input type = "button" value = "봄" class = 'setSpring' onclick="Spring()">
+            <input type = "button" value = "여름" class = 'setSummer' onclick="Summer()">
+        </div>
     </div>
     
     
@@ -33,14 +39,14 @@
                 <p>일 : </p>
             </div>
             <div id = 'insert'>
-                <input type = "text" id = 'insert_year'>
+                <input type = "text" id = 'insert_year' maxlength="4">
                 <br>
-                <input type = "text" id = 'insert_month'>
+                <input type = "text" id = 'insert_month' maxlength="2">
                 <br>
-                <input type = "text" id = 'insert_day'>
+                <input type = "text" id = 'insert_day' maxlength="2">
             </div>
             <input type="button" id = "allow_button" value = "allow" onclick="FS()">
-            <input type="button" id = "close_button" value = "close" onclick="location.href='#close'">
+            <input type="button" id = "close_button" value = "close" onclick="FS2()">
         </div>
     </div>
     </div>

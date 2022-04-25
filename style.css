@@ -5,15 +5,6 @@ body{
     margin: 0px;
     background: linear-gradient(lightpink, rgb(255, 201, 248));
 }
-.upbar{
-    position: fixed;
-    right:0;
-    top:0;
-    width: 600px;
-    height: 100px;
-    background: linear-gradient(top left,rgb(133, 222, 238),rgb(17, 159, 184));
-    background-color: rgb(26, 209, 241);
-}
   .menu-trigger,
   .menu-trigger span {
     transition: all .4s;
@@ -21,8 +12,10 @@ body{
   
   .menu-trigger {
     position: fixed;
-    width: 50px;
-    height: 44px;
+    width: 60px;
+    height: 50px;
+    top: 20px;
+    right: 10px;
   }
   
   .menu-trigger span {
@@ -45,31 +38,67 @@ body{
   .menu-trigger span:nth-of-type(3) {
     top: 55px;
   }
-  .menu-trigger.active-1 span:nth-of-type(1) {
+  .menu-trigger.active span:nth-of-type(1) {
     -webkit-transform: translateY (20px) rotate (-45deg);
     transform: translateY(20px) rotate(-45deg);
   }
   
-  .menu-trigger.active-1 span:nth-of-type(2) {
+  .menu-trigger.active span:nth-of-type(2) {
     opacity: 0;
   }
   
-  .menu-trigger.active-1 span:nth-of-type(3) {
+  .menu-trigger.active span:nth-of-type(3) {
     -webkit-transform: translateY(-20px) rotate(45deg);
     transform: translateY(-10px) rotate(45deg);
   }
-  .selectview span{
+  .menu-trigger2,
+  .menu-trigger2 span {
     transition: all .4s;
+  }
+  .menu-trigger2 {
     position: fixed;
-    top: 110px;
-    right: 50px;
-    width: 500px;
-    height: 600px;
-    background-color: rgb(148, 148, 148, 0.9);
+    width: 60px;
+    height: 50px;
+    top: 20px;
+    right: 10px;
     opacity: 0;
   }
-  .selectview.active-1 span{
-      opacity: 1;
+  
+  .menu-trigger2 span {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .menu-trigger2 span:nth-of-type(1) {
+    top: 25px;
+  }
+  
+  .menu-trigger2 span:nth-of-type(2) {
+    top: 40px;
+  }
+  
+  .menu-trigger2 span:nth-of-type(3) {
+    top: 55px;
+  }
+  .menu-trigger2.active span:nth-of-type(1) {
+    -webkit-transform: translateY (20px) rotate (-45deg);
+    transform: translateY(20px) rotate(-45deg);
+  }
+  
+  .menu-trigger2.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .menu-trigger2.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+  }
+  .menu-trigger2.active{
+    opacity: 1;
   }
 #no_mobile{
   position: absolute;
@@ -98,14 +127,74 @@ body{
   }
 }
 #current_date{
-    width: 80px;
-    font-size: 150%;
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    width: 250px;
+    height: 250px;
+    font-size: 400%;
     font-weight: bold;
     text-align: center;
     border: 0px;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    margin: 12px;
+}
+.selectview{
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.selectview.active{
+  opacity:1;
+  pointer-events: auto;
+}
+.selectview div{
+  position: absolute;
+	top: 20%;
+	left: 9.5%;
+	width: 450px;
+	height: 400px;
+	padding: 16px;
+	border: none;
+	background:linear-gradient(rgba(241, 241, 241, 0.8) 60% , rgba(219, 219, 219, 0.8) 40%);
+	overflow: auto;	
+}
+.selectview div p{
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  font-size: 25px;
+
+}
+.setSpring{
+  position:absolute;
+  top: 45%;
+  left: 10%;
+  width: 80px;
+  height: 30px;
+  border-radius: 20%;
+  border: none;
+  background-color: pink;
+  box-shadow:0px 0px 5px 1px rgb(236, 178, 188);
+}
+.setSummer{
+  position:absolute;
+  top: 45%;
+  left: 30%;
+  width: 80px;
+  height: 30px;
+  border-radius: 20%;
+  border: none;
+  background-color: greenyellow;
+  box-shadow:0px 0px 5px 1px rgb(164, 243, 45);
 }
 #click{
     position: fixed;
@@ -140,17 +229,17 @@ body{
     pointer-events: none;
 }
 .white_content:target {
-    opacity:1;
-    pointer-events: auto;
+  opacity:1;
+  pointer-events:auto;
 }
 .white_content > div {
 	position: absolute;
-	top: 15.5%;
-	left: 7%;
-	width: 75.5%;
-	height: 50%;
+	top: 20%;
+	left: 9%;
+	width: 450px;
+	height: 400px;
 	padding: 16px;
-	border: 16px solid orange;
+	border: 2px solid orange;
 	background:linear-gradient(white 60%, rgb(236, 236, 236) 40%);
 	overflow: auto;	
 }
