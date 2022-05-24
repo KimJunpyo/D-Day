@@ -1,0 +1,24 @@
+@import url("D_Day.css");
+@import url("spin.css");
+@import url("scrollbar.css");
+
+.flex_container{
+    display: inline-flex;
+    flex-flow: row nowrap;
+}
+.firstscreen{
+    width: 600px;
+    height: 800px;
+    background: linear-gradient(lightpink, rgb(255, 201, 248));
+    margin-right: -6px;
+}
+.secondscreen{
+    width: 600px;
+    height: 800px;
+    background: linear-gradient(lightpink, rgb(255, 201, 248));
+}
+.thirdscreen{
+    width: 600px;
+    height: 800px;
+    background: linear-gradient(lightpink, rgb(255, 201, 248));
+}

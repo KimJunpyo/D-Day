@@ -1,0 +1,28 @@
+#insert_year, #insert_month, #insert_day{
+    display:block;
+    width: 90%;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#insert_descript{
+  position:absolute;
+  top: 50%;
+}
+#insert_description{
+  display: block;
+  resize: none;
+}
+#new_window #view1{
+    position:absolute;
+    left: 45%;
+}
+#new_window #view1 p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+#new_window #insert{
+    position:absolute;
+    left: 55%;
+}

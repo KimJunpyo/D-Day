@@ -1,0 +1,45 @@
+.current_date_all{
+    width: 250px;
+    height: 250px;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+#current_date1{
+    position: absolute;
+    top: 270px;
+    left: 187px;
+}
+#current_date2{
+    position: absolute;
+    top: 270px;
+    left: 787px;
+}
+#current_date3{
+    position: absolute;
+    top: 270px;
+    left: 1387px;
+}
+.test{
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    pointer-events: auto;
+    z-index: 1;
+}
+.test1{
+    left: 190px;
+    top: 340px;
+}
+.test2{
+    left: 790px;
+    top: 340px;
+}
+.test3{
+    left: 1390px;
+    top: 340px;
+}

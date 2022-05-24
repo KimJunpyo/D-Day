@@ -1,0 +1,22 @@
+.page_count div{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 50%;
+}
+.one_page{
+    background-color: black;
+    bottom: 10px;
+    left: 250px;
+}
+.two_page{
+    background-color: white;
+    bottom: 10px;
+    left: 290px;
+}
+.three_page{
+    background: white;
+    bottom: 10px;
+    left: 330px;
+}

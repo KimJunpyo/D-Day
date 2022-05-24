@@ -1,0 +1,22 @@
+#allow_button{
+    position: absolute;
+    top: 92%;
+    left: 55%;
+    color: orange;
+    border: 5px solid orange;
+    background-color: white;
+    width: 20%;
+    height: 7%;
+    font-size: 100%;
+}
+#close_button{
+    position: absolute;
+    top: 92%;
+    left: 78%;
+    color: orange;
+    border: 5px solid orange;
+    background-color: white;
+    width: 20%;
+    height: 7%;
+    font-size: 100%;
+}

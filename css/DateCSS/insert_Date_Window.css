@@ -1,0 +1,32 @@
+@import url("insert_Date_element.css");
+@import url("insert_Date_Button.css");
+
+.white_content {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.white_content:target {
+    opacity:1;
+    pointer-events:auto;
+}
+.white_content > div {
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    width: 425px;
+    height: 405px;
+    padding: 16px;
+    border: 2px solid orange;
+    background:linear-gradient(white 60%, rgb(236, 236, 236) 40%);
+    overflow: auto;	
+}

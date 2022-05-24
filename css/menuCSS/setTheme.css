@@ -1,0 +1,44 @@
+.setSpring{
+    position:absolute;
+    top: 45%;
+    left: 8%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20%;
+    border: none;
+    background-color: pink;
+    box-shadow:0px 0px 5px 1px rgb(236, 178, 188);
+}
+.setSummer{
+    position:absolute;
+    top: 45%;
+    left: 31%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20%;
+    border: none;
+    background-color: greenyellow;
+    box-shadow:0px 0px 5px 1px rgb(164, 243, 45);
+}
+.setFall{
+    position:absolute;
+    top: 45%;
+    left: 54%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20%;
+    border: none;
+    background-color: orange;
+    box-shadow:0px 0px 5px 1px rgb(252, 167, 40);
+}
+.setWinter{
+    position:absolute;
+    top: 45%;
+    left: 77%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20%;
+    border: none;
+    background-color: skyblue;
+    box-shadow:0px 0px 5px 1px rgb(174, 228, 245);
+}

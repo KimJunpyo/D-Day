@@ -1,0 +1,19 @@
+#click{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    border: 4px solid white;
+    font-weight: 600;
+    background-color: rgb(6, 136, 223);
+    border-radius: 100%;
+    margin: 12px;
+}
+#click:hover{
+    background-color: rgb(7, 89, 145);
+}

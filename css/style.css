@@ -1,0 +1,13 @@
+@import url("screen.css");
+@import url("screen_wrong.css");
+
+html{
+  overflow: hidden;
+}
+body{
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

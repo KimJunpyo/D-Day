@@ -1,0 +1,15 @@
+@import url("option_Window.css");
+@import url("first_description_Window.css");
+@import url("second_description_Window.css");
+@import url("third_description_Window.css");
+
+#good{
+    position: absolute;
+    top: 6.5%;
+    left: 10%;
+}
+#good > input{
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
