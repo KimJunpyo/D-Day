@@ -71,6 +71,20 @@ function D_Day(){
     count++;
 }
 
+function modify(e){
+    year = document.getElementById("year" + e).value;
+    month = document.getElementById("month" + e).value;
+    day = document.getElementById("day" + e).value;
+    descript = document.getElementById("data" + e).value;
+    count = e;
+
+    D_Day();
+}
+
+function close_button(e){
+    document.getElementById("set" + e).classList.toggle("active");
+}
+
 const clickSet1 = document.getElementById("settingWindow1");
 clickSet1.addEventListener('click', function(){
     document.getElementById("set1").classList.toggle("active");
@@ -86,23 +100,33 @@ clickSet3.addEventListener('click', function(){
     document.getElementById("set3").classList.toggle("active");
 }, false);
 
+
+
 function Spring(){
     document.getElementsByClassName("firstscreen")[0].style.background= 'linear-gradient(rgb(255,182,193),rgb(255, 201, 248))';
     document.getElementsByClassName("secondscreen")[0].style.background= 'linear-gradient(rgb(255,182,193),rgb(255, 201, 248))';
+    document.getElementsByClassName("thirdscreen")[0].style.background= 'linear-gradient(rgb(255,182,193),rgb(255, 201, 248))';
 }
 
 
 function Summer(){
     document.getElementsByClassName("firstscreen")[0].style.background= 'linear-gradient(rgb(120, 230, 167),rgb(120, 230, 219))';
     document.getElementsByClassName("secondscreen")[0].style.background= 'linear-gradient(rgb(120, 230, 167),rgb(120, 230, 219))';
+    document.getElementsByClassName("thirdscreen")[0].style.background= 'linear-gradient(rgb(120, 230, 167),rgb(120, 230, 219))';
 }
 
 function Fall(){
     document.getElementsByClassName("firstscreen")[0].style.background= 'linear-gradient(rgb(253, 198, 124),rgb(255, 178, 124))';
     document.getElementsByClassName("secondscreen")[0].style.background= 'linear-gradient(rgb(253, 198, 124),rgb(255, 178, 124))';
+    document.getElementsByClassName("thirdscreen")[0].style.background= 'linear-gradient(rgb(253, 198, 124),rgb(255, 178, 124))';
 }
 
 function Winter(){
     document.getElementsByClassName("firstscreen")[0].style.background= 'linear-gradient(rgb(174, 228, 245),rgb(130, 184, 219))';
     document.getElementsByClassName("secondscreen")[0].style.background= 'linear-gradient(rgb(174, 228, 245),rgb(130, 184, 219))';
+    document.getElementsByClassName("thirdscreen")[0].style.background= 'linear-gradient(rgb(174, 228, 245),rgb(130, 184, 219))';
+}
+
+function setSliderOpacity(e){
+    document.getElementById("menu-main").style.opacity= e / 1000;
 }

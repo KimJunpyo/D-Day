@@ -1,0 +1,32 @@
+#modify_data{
+    position: absolute;
+    top: 6.5%;
+    left: 10%;
+}
+#modify_data > input{
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+#modify{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top : 390px;
+    left : 290px;
+}
+#delete{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top : 390px;
+    left : 385px;
+}
+.button_design{
+    border: none;
+    background-color: rgb(255, 225, 225);
+    border-radius: 10%;
+}
+.button_design:hover{
+    background-color: rgb(255, 194, 194);
+}
